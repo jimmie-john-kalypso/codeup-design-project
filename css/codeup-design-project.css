@@ -19,6 +19,8 @@ h5 {
 .card {
     width: 80%;
     margin: auto;
+    background-color: lightgray;
+    border: none;
 }
 
 .col-6 {
@@ -113,5 +115,8 @@ h5 {
     .hiddenCard, .rightCol{
         display: none;
     }
+}
+.card img{
+    border: 5px solid gray;
 }
 
