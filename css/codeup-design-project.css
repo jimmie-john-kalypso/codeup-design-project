@@ -87,3 +87,31 @@ h5 {
 .small {
     padding-right: 0;
 }
+.phone div {
+    background-image: url("../img/mobile-phone.jpg");
+    background-size: cover;
+
+}
+.head div {
+    background-image: url("../img/head.jpg");
+    background-size: cover;
+
+}
+.ipad div {
+    background-image: url("../img/ipad.jpg");
+    background-size: cover;
+
+}
+.rightCol h3{
+    padding: 0px;
+}
+.card-body{
+    margin: 25px;
+}
+
+@media screen and (min-width:300px) and (max-width: 576px){
+    .hiddenCard, .rightCol{
+        display: none;
+    }
+}
+
