@@ -1,6 +1,12 @@
 body {
     background-color: lightgrey;
     text-align: center;
+    font-family: "anton";
+}
+
+h1 {
+    margin-top: 35%;
+    margin: auto;
 }
 
 h1, h3 {
@@ -9,25 +15,33 @@ h1, h3 {
     padding: 20px;
 }
 
-h5 {
-    text-align: left;
+h4, h5 {
+    /*text-align: left;*/
+    font-family: "abel";
 }
 
+.row {
+    justify-content: center;
+}
 .small-circle {
     padding-right: 0;
 }
 .card {
     width: 80%;
-    margin: auto;
+    margin: 0;
     background-color: lightgray;
     border: none;
+    max-width: none;
 }
 
 .col-6 {
-    display: grid;
+    display: flex;
     justify-content: center;
 }
-
+.col-md-9 {
+    padding-left: 10px;
+    text-align: left;
+}
 .circle {
     width: 55%;
     margin: auto;
@@ -41,6 +55,7 @@ h5 {
     border: white solid 7px;
     color: white;
     padding-top: 35.5px;
+    margin-bottom: 10px;
 }
 
 .develop {
@@ -88,35 +103,62 @@ h5 {
 
 .small {
     padding-right: 0;
+
 }
 .phone div {
     background-image: url("../img/mobile-phone.jpg");
     background-size: cover;
-
+    max-height: 61px;
+    max-width: 61px;
+    padding-right: 10px;
+    border: darkgrey solid 2px;
 }
 .head div {
     background-image: url("../img/head.jpg");
     background-size: cover;
-
+    max-height: 61px;
+    max-width: 61px;
+    border: darkgrey solid 2px;
 }
 .ipad div {
     background-image: url("../img/ipad.jpg");
     background-size: cover;
-
+    max-height: 61px;
+    max-width: 61px;
+    border: darkgrey solid 2px;
 }
 .rightCol h3{
-    padding: 0px;
+    padding: 0;
+    padding-left: 10px;
 }
 .card-body{
     margin: 25px;
 }
+.bird {
+    height: 30px;
+    width: 35px;
+    margin-right: 10px;
+}
+.tweet {
+    text-align: left;
+    font-family: "Abel";
+}
 
-@media screen and (min-width:300px) and (max-width: 576px){
+.card img{
+    border: 5px solid darkgrey;
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .hiddenCard, .rightCol{
         display: none;
     }
-}
-.card img{
-    border: 5px solid gray;
+    .divider {
+        display: none;
+    }
 }
 
+@media screen and (min-width: 768px) {
+    h4, h5 {
+        text-align: left;
+    }
+}
