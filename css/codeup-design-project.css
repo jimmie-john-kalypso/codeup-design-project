@@ -213,6 +213,7 @@ h4, h5 {
     margin-bottom: 5px;
 }
 
+
 @media screen and (min-width: 100px) and (max-width: 576px) {
     .codeupDesign {
         top: 0;
@@ -263,6 +264,11 @@ h4, h5 {
     h4, h5 {
         text-align: left;
     }
+    hr{
+        width: 75%;
+        max-width: 1000px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -315,6 +321,9 @@ h4, h5 {
 }
 
 @media screen and (min-width: 992px) {
+    body>.circle{
+        width: 50%;
+    }
     body {
         max-width: 3000px;
     }
