@@ -2,11 +2,26 @@ body {
     background-color: lightgrey;
     text-align: center;
     font-family: "anton";
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 25px;
+    margin-top: 25px;
+    position: absolute;
+    width: 60%;
+    top: 150px;
+
 }
 
 h1 {
-    margin-top: 35%;
-    margin: auto;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h3 {
@@ -22,6 +37,7 @@ h4, h5 {
 
 .row {
     justify-content: center;
+    margin-right: -15px;
 }
 .small-circle {
     padding-right: 0;
@@ -43,7 +59,7 @@ h4, h5 {
     text-align: left;
 }
 .circle {
-    width: 55%;
+    width:60%;
     margin: auto;
 }
 .design {
@@ -56,6 +72,7 @@ h4, h5 {
     color: white;
     padding-top: 35.5px;
     margin-bottom: 10px;
+    min-width: 105px;
 }
 
 .develop {
@@ -67,6 +84,7 @@ h4, h5 {
     border: white solid 7px;
     color: white;
     padding-top: 35.5px;
+    min-width: 105px;
 }
 
 .support {
@@ -78,6 +96,7 @@ h4, h5 {
     border: white solid 7px;
     color: white;
     padding-top: 35.5px;
+    min-width: 105px;
 }
 
 .host {
@@ -89,6 +108,7 @@ h4, h5 {
     border: white solid 7px;
     color: white;
     padding-top: 35.5px;
+    min-width: 105px;
 }
 
 .small div {
@@ -99,6 +119,7 @@ h4, h5 {
     width: 18px;
     border: none;
     float: right;
+    min-width: 18px;
 }
 
 .small {
@@ -132,7 +153,7 @@ h4, h5 {
     padding-left: 10px;
 }
 .card-body{
-    margin: 25px;
+    padding: 5px 10px 5px 5px;
 }
 .bird {
     height: 30px;
@@ -146,19 +167,122 @@ h4, h5 {
 
 .card img{
     border: 5px solid darkgrey;
+    height: 208px;
+}
+.navSubRow{
+    display: flex;
+    justify-content: space-between;
 }
 
-@media screen and (min-width: 100px) and (max-width: 767px) {
+.logoContainer{
+    margin: 25px 0px;
+    background-color: white;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 105px;
+    height: 105px;
+}
+.codeupDesign{
+    position: absolute;
+    top: -25px;
+    font-family: "abel";
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 576px) {
     .hiddenCard, .rightCol{
         display: none;
     }
     .divider {
         display: none;
     }
+    .section{
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .rightCol{
+        display: none;
+    }
+    hr{
+        width: 75%;
+    }
+    .circle{
+        width: 70%;
+    }
+    .leftCol>div{
+        margin: 10px;
+    }
+    nav{
+        top: 27.5px;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .navSubRow{
+        justify-content: space-evenly;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px ) {
     h4, h5 {
         text-align: left;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .logoContainer{
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+
+    }
+    .codeupDesign{
+        position: static;
+        margin: 10px;
+        float: left;
+        text-align: left;
+        padding: 0;
+        width: 50%
+
+    }
+    nav{
+        position: static;
+        justify-content: space-around;
+        margin: 0px;
+
+
+    }
+    .navSubRow{
+        justify-content: space-around;
+        padding: 0;
+    }
+    h1{
+        margin-top: 50px;
+    }
+    .row>h5{
+        /*padding-right: 0*/
+    }
+    .small-circle div{
+        padding: 2px 0;
+
+    }
+}
+
+
+
+nav div a{
+    color: black;
+    font-family: "abel";
+}
+
+
+
+
+
+
