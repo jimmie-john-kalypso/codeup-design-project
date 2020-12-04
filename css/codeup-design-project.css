@@ -31,7 +31,7 @@ h1, h3 {
     padding: 0;
 }
 h4, h5 {
-    text-align: left;
+    text-align: center;
     font-family: "abel";
 }
 
@@ -208,6 +208,10 @@ h4, h5 {
     background-color: white;
     height: 75px;
 }
+.small-circle .col-8{
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
 
 @media screen and (min-width: 100px) and (max-width: 576px) {
     .codeupDesign {
@@ -222,6 +226,9 @@ h4, h5 {
     }
     .section{
         margin-top: 50px;
+    }
+    nav{
+        width: 80%;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -246,6 +253,7 @@ h4, h5 {
         width: 90%;
         justify-content: space-evenly;
     }
+
     .navSubRow{
         justify-content: space-evenly;
     }
@@ -259,7 +267,7 @@ h4, h5 {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body {
-        margin: 5%;
+        margin: 5% 0;
     }
     .logoContainer{
         justify-content: flex-start;
@@ -296,6 +304,13 @@ h4, h5 {
     }
     .card-body {
         padding: 0;
+    }
+    .header{
+        max-width: 120%;
+    }
+    .card-body .small-circle {
+        justify-content: center;
+        margin-right: 0;
     }
 }
 
