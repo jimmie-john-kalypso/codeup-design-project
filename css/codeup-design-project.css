@@ -7,7 +7,6 @@ body {
     margin-right: auto;
 }
 nav{
-    background: transparent;
     display: flex;
     justify-content: space-evenly;
     padding: 0px 25px;
@@ -23,15 +22,16 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
+.heading-margin-bottom {
+    margin-bottom: 30px;
+}
 h1, h3 {
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 0;
 }
-
 h4, h5 {
-    /*text-align: left;*/
+    text-align: left;
     font-family: "abel";
 }
 
@@ -61,6 +61,7 @@ h4, h5 {
 .circle {
     width:60%;
     margin: auto;
+    padding-left: 0;
 }
 .design {
     border-radius: 50%;
@@ -173,7 +174,6 @@ h4, h5 {
     display: flex;
     justify-content: space-between;
 }
-
 .logoContainer{
     margin: 25px 0px;
     background-color: white;
@@ -181,6 +181,9 @@ h4, h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo{
@@ -191,10 +194,26 @@ h4, h5 {
     position: absolute;
     top: -25px;
     font-family: "abel";
+    font-size: 30px;
 
 }
 
+.section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    margin: 25px 0px;
+    background-color: white;
+    height: 75px;
+}
+
 @media screen and (min-width: 100px) and (max-width: 576px) {
+    .codeupDesign {
+        top: 0;
+        position: absolute;
+    }
     .hiddenCard, .rightCol{
         display: none;
     }
@@ -206,6 +225,10 @@ h4, h5 {
     }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    .codeupDesign {
+        top: 0;
+        position: absolute;
+    }
     .rightCol{
         display: none;
     }
@@ -235,12 +258,15 @@ h4, h5 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        margin: 5%;
+    }
     .logoContainer{
         justify-content: flex-start;
         flex-direction: row;
         align-items: center;
         position: static;
-
+        width: 80%;
     }
     .codeupDesign{
         position: static;
@@ -248,15 +274,12 @@ h4, h5 {
         float: left;
         text-align: left;
         padding: 0;
-        width: 50%
-
+        width: 50%;
     }
     nav{
         position: static;
         justify-content: space-around;
         margin: 0px;
-
-
     }
     .navSubRow{
         justify-content: space-around;
@@ -266,16 +289,56 @@ h4, h5 {
         margin-top: 50px;
     }
     .row>h5{
-        /*padding-right: 0*/
+        padding-right: 0
     }
     .small-circle div{
         padding: 2px 0;
-
+    }
+    .card-body {
+        padding: 0;
     }
 }
 
-
-
+@media screen and (min-width: 992px) {
+    body {
+        max-width: 3000px;
+    }
+    .logoContainer{
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+    }
+    .codeupDesign{
+        position: static;
+        margin: 10px;
+        float: left;
+        text-align: left;
+        padding: 0;
+        width: 50%
+    }
+    nav{
+        position: static;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .navSubRow{
+        justify-content: space-around;
+        padding: 0;
+    }
+    h1{
+        margin-top: 50px;
+    }
+    .row>h5{
+        padding-right: 0
+    }
+    .small-circle div{
+        padding: 2px 0;
+    }
+    .section {
+        max-width: 1000px;
+    }
+}
 nav div a{
     color: black;
     font-family: "abel";
